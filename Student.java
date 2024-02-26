@@ -3,8 +3,15 @@ public class Student {
     String name;
     int marks1;
     int marks2;
-    public void setId(int id){
+    public void setId(int num){
+        if (num <= 0){
+            System.out.println("Invalid ID");
+            return;
+        }
         this.id = id;
+    }
+    public int getId(){
+        return id;
     }
     private double calculateAverage(){
         double sum = marks1 + marks2;
