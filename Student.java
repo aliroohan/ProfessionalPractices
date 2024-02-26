@@ -26,6 +26,11 @@ public class Student{
     private String name;
     private int age;
     private int grade;
+    void Student(){
+        name = "?";
+        age = 0;
+        grade = 0;
+    }
     public void setName(String name){
         this.name = name;
     }
@@ -49,5 +54,10 @@ public class Student{
         System.out.println("Age: " + age);
         System.out.println("Grade: " + grade);
     }
-    
+    boolean isAdult(){
+        return age >= 18;
+    }
+    void promote(){
+        grade++;
+    }
 }
