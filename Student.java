@@ -13,4 +13,6 @@ public class Student {
     public boolean isPass(){
         return calculateAverage() >= 35;
     }
+
+ //this is a comment.
 }
